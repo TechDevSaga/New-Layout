@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat-Regular' , sans-serif;
+}
+
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+/* =============Header===========  */
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/background.png');
+    background-size:cover ;
+}
+/* .logo{
+    margin-top: 30px;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+} */
+.logo{
+    width: 250px;
+    height: 220px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.container{
+    margin: 0px 100px;
+    
+}
+
+.header-text{
+    margin-top: 150px;
+    max-width: 350px;
+}
+ h1{
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+p{
+    font-size: 18px;
+    line-height: 18px;
+    color: #777;
+}
+
+.common-btn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    border: 2px solid rgb(214, 166, 174);
+    background: transparent;
+    
+}
+
+
+
+
+/* ======== Home Pageend design============= */
+.pageend-design{
+   position: relative;
+    width: 200px;
+    height: 150px;
+    margin-top: -30px;
+}
+.pagend {
+    margin-left: -80px;
+    width: 100%;
+    height: 100%;
+}
+
+ .line1{
+    position: absolute;
+    top: 75px;
+    left: 40px;
+    width: 100%;
+    height: 2px;
+    background: #D6A6AE;
+  
+}
+/* .line::after{
+    content: '';
+    top: 90px;
+    transition: all 0.5s ease;
+} */
+.line2{
+    position: absolute;
+    top: 85px;
+    left: 40px;
+    width:80%;
+    height: 2px;
+    background: #D6A6AE;
+}
+
+
+
+
+
+/* ========================navigation===================== */
+
+ #sideNav {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    background:#ea9fb1;
+    height: 100vh;
+    width: 250px;
+    padding-top: 20px; 
+    transition: all 0.4s ease; 
+    z-index: 2;  
+}
+
+#sideNav ul li{
+    list-style: none;
+    padding: 20px 30px;
+}
+#sideNav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#menuBtn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    margin: 30px 50px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
+
+/* ===================About Section============== */
+#about, #offer{
+    padding: 100px 0 ;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-left-col{
+    flex-basis: 50%;
+}
+.about-left-col img{
+    width: 100%;
+}
+.about-right-col{
+    flex-basis: 50%;
+    text-align: right;
+    
+}
+.about-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+
+.about-text h1{
+    margin: 20px 0;
+    /* font-size: 32px; */
+}
+
+.about-text h3{
+    font-style: italic;
+    margin: 10px 0 10px;
+    
+}
+
+.about-text h2{
+    font-style: italic;
+    font-size: 28px;
+    margin: 50px 0 0;
+}
+
+#about .pageend-design{
+    display: inline-block;
+    margin-top: 35px;
+}
+
+#about .pagend{
+    margin-right: -50px;
+    position: relative;
+}
+#about .line1{
+    top:65px;
+    left: -50px;
+}
+#about .line2{
+    top: 75px;
+    left: 1px;
+} 
+ 
+
+
+/* ==============Features Section=============== */
+#features{
+  margin: 50px 0;
+}
+.feature-row{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    
+  
+}
+
+.feature-col{
+    flex-basis: 25%;
+    text-align: center;
+  
+}
+.feature-col img{
+    width: 100px;
+}
+
+.feature-col h4{
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.feature-col p{
+    font-size: 16px;
+}
+
+.feature-btn{
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.feature-btn .common-btn{
+    width: 200px;
+    height: 30px;
+}
+
+
+
+
+
+/* =================Courses Section=================== */
+
+#courses{
+    margin: 100px 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    
+   
+}
+
+.courses-left-col{
+    flex-basis: 50%;
+
+}
+
+.courses-right-col{
+    flex-basis: 50%;
+}
+.courses-right-col img{
+    width: 100%;
+    margin-top: 80px;
+    
+}
+
+.courses-text{
+    max-width: 350px;
+    margin-left: 100px;
+    
+}
+
+.courses-left-col .common-btn{
+   margin-top: 40px;
+   width: 200px;
+   height: 30px;
+  
+}
+
+#courses .pageend-design{
+  position: absolute;
+  top: 520px;
+}
+
+
+
+
+/* ================Offer Section================== */
+
+
+#offer .pageend-design{
+    display: inline-block;
+    margin-top: 105px;
+}
+
+#offer .pagend{
+    margin-right: -50px;
+    position: relative;
+}
+#offer .line1{
+    top:65px;
+    left: -50px;
+}
+#offer .line2{
+    top: 75px;
+    left: 1px;
+} 
+
+
+
+/* ====================Contact Us================= */
+ 
+.contact-row{
+    margin-top: 100px ;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-left-col,
+.contact-right-col{
+    flex-basis: 50%;
+}
+.contact-right-col img{
+    width: 100%;
+
+}
+
+.contact-left-col{
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    
+}
+.contact-left-col input{
+    width: 100%;
+    padding: 4px 0;
+    border: 2px solid #D6A6AE;
+    margin-bottom: 1px;
+}
+.contact-btn{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-btn button{
+    margin-top: 3px;
+    padding: 3px 0;
+    flex-basis: 48%;
+    border: 2px solid #D6A6AE;
+    background: transparent;   
+}
+
+/* ===============Footer================= */
+
+#footer hr{
+    border: 1px solid #D6A6AE;
+    width: 100%;
+}
+
+#footer .footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 0;
+    justify-content: space-between;
+}
+.footer-left-col
+{
+    flex-basis: 50%;
+}
+
+.footer-right-col{
+    flex-basis: 50%;
+    
+}
+.footer-left-col{
+    margin-top: 50px;
+}
+
+.footer-links{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin-right: 50px;
+    justify-content: space-between;
+
+}
+.link-title{
+    margin-right: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.link-title h4{
+    margin-bottom: 7px;
+    color: #D6A6AE;
+}
+
+.footer-links .link-title small{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    color: #777;
+}
+
+.footer-info{
+    display: flex;
+ width: 100%;
+    justify-content: space-around;
+    
+}
+.copyright-text{
+    flex-basis: 50%;
+    margin-top: 50px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.copyright-text small{
+    margin-bottom: 5px;
+}
+
+ .footer-logo{
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.footer-btn{
+    margin-top: 10px;
+    padding: 3px 60px;
+    border: 2px solid #D6A6AE;
+    background: transparent;
+}
+
+button:hover {
+    background: #D6A6AE;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;    
+}
+
+/*=============== social media section============= */
+
+#social{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    top:220px;
+    left: 0;
+    background: rgba(250,250,250, 0.6);
+    border-radius: 0 30px 30px 0;
+    height: 220px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+
+    
+
+}
+#social img{
+    margin-bottom: 8px;
+    cursor: pointer;
+    
+}
